@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210, 15%, 95%; /* Twitter background color */
+    --foreground: 210, 10%, 10%; /* Twitter foreground color */
+
+    --muted: 210, 40%, 96%; /* Twitter muted color */
+    --muted-foreground: 215, 16%, 47%; /* Twitter muted foreground color */
+
+    --popover: 210, 15%, 95%; /* Twitter popover color */
+    --popover-foreground: 210, 10%, 10%; /* Twitter popover foreground color */
+
+    --border: 210, 30%, 90%; /* Twitter border color */
+    --input: 210, 30%, 90%; /* Twitter input color */
+
+    --card: 210, 15%, 95%; /* Twitter card background color */
+    --card-foreground: 210, 10%, 10%; /* Twitter card foreground color */
+
+    --primary: 204, 88%, 53%; /* Twitter primary color */
+    --primary-foreground: 210, 40%, 98%; /* Twitter primary foreground color */
+
+    --secondary: 210, 40%, 96%; /* Twitter secondary color */
+    --secondary-foreground: 210, 10%, 10%; /* Twitter secondary foreground color */
+
+    --accent: 210, 40%, 96%; /* Twitter accent color */
+    --accent-foreground: 210, 10%, 10%; /* Twitter accent foreground color */
+
+    --destructive: 0, 100%, 50%; /* Twitter destructive color */
+    --destructive-foreground: 210, 40%, 98%; /* Twitter destructive foreground color */
+
+    --ring: 215, 20%, 65%; /* Twitter ring color */
+
+    --radius: 0.5rem;
+}
+
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
